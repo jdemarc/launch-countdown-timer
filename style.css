@@ -24,9 +24,15 @@ body {
   flex-direction: column;
 }
 
-#time, .unit {
+.flex-ctr {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+}
+#time, #units {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
 }
 
 #time {
@@ -34,7 +40,7 @@ body {
   color: hsl(345, 95%, 68%)
 }
 
-.unit {
+#units {
   font-size: 14px;
   color: hsl(237, 18%, 59%);
 }
@@ -47,7 +53,6 @@ footer {
   width: 100%;
   background-image: url('/imgs/pattern-hills.svg');
 }
-
 
 .social-media-ctr {
   display: flex;

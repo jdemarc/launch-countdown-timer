@@ -11,7 +11,11 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   timeEl = document.getElementById('time');
-  timeEl.innerHTML = days + ' ' + hours + ' ' + minutes + ' ' + seconds;
+  timeEl.innerHTML = "<div>" + days + "</div>" +
+                     "<div>" + hours + "</div>" +
+                     "<div>" + minutes + "</div>" +
+                     "<div>" + seconds + "</div>";
+
 
   distance < 0 ? clearInterval(x) : timeEl = 'EXPIRED';
 }, 1000);
