@@ -11,7 +11,7 @@ body {
 
 .hdr {
   display: flex;
-  margin: 10% 0;
+  margin: 8% 0;
   width: 100%;
   color: white;
   font-weight: 700;
@@ -24,9 +24,14 @@ body {
   flex-direction: column;
 }
 
-.time, .unit {
+#time, .unit {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+#time {
+  font-size: 60px;
+  color: hsl(345, 95%, 68%)
 }
 
 .unit {
